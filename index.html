@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <title>EV UIW NTT</title>
+    <link rel="stylesheet" href="Google Sheet.css">
+</head>
+
+<body>
+
+    <h2>Electric Vehicle PLN UIW NTT</h2>
+    <p>Data Kendaraan Listrik PLN UIW NTT.</p>
+
+    <div class="container">
+        <form action="" method="post" name="form-sheet">
+
+            <div class="row">
+                <a href="data.html" class="fcc-btn">Lihat Data</a>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <span style="text-transform:uppercase;">
+                        <label>Nama Lengkap</label>
+                    </span>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="Nama Lengkap" placeholder="Nama Lengkap" required
+                        oninvalid="this.setCustomValidity('Nama Lengkap Tidak Boleh Kosong!')"
+                        oninput="this.setCustomValidity('')">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <span style="text-transform:uppercase;">
+                        <label>Jenis EV</label>
+                    </span>
+                </div>
+                <div class="col-75">
+                    <select name="Jenis EV" required="">
+                        <option value="" disabled selected>-- Pilih Salah Satu --</option>
+                        <option value="Motor Listrik">Motor Listrik</option>
+                        <option value="Mobil Listrik">Mobil Listrik</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <span style="text-transform:uppercase;">
+                        <label>IDPEL / NO METER</label>
+                    </span>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="IDPEL / NO METER" placeholder="No Meter" required
+                        oninvalid="this.setCustomValidity('IDPEL / No Meter Tidak Boleh Kosong!')"
+                        oninput="this.setCustomValidity('')">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <span style="text-transform:uppercase;">
+                        <label>Merek / Type</label>
+                    </span>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="Merek / Type" placeholder="Merek / Type" required
+                        oninvalid="this.setCustomValidity('Merek / Type Tidak Boleh Kosong!')"
+                        oninput="this.setCustomValidity('')">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <span style="text-transform:uppercase;">
+                        <label>Nomor Telepon</label>
+                    </span>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="Nomor Telepon" inputmode="numeric" pattern="[0-9\s]{9,13}" maxlength="13"
+                        placeholder="Eg : 081 222 2224" required
+                        oninvalid="this.setCustomValidity('Nomor Telpon 9-13 Digit (Angka), Tidak Boleh Kosong!')"
+                        oninput="this.setCustomValidity('')">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <span style="text-transform:uppercase;">
+                        <label>Unit</label>
+                    </span>
+                </div>
+                <div class="col-75">
+                    <select name="Unit" required="">
+                        <option value="" disabled selected>-- Pilih Salah Satu --</option>
+                        <option value="UP3 Kupang">UP3 Kupang</option>
+                        <option value="UP3 Sumba">UP3 Sumba</option>
+                        <option value="UP3 Flores Bagian Timur">UP3 Flores Bagian Timur</option>
+                        <option value="UP3 Flores Bagian Barat">UP3 Flores Bagian Barat</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <span style="text-transform:uppercase;">
+                        <label>Keterangan</label>
+                    </span>
+                </div>
+                <div class="col-75">
+                    <textarea name="Keterangan" placeholder="Keterangan" style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </div>
+
+    <script src="Google Sheet.js"></script>
+
+</body>
+
+</html>
